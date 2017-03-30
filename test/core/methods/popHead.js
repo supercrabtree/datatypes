@@ -42,3 +42,14 @@ test('should decrement the linked list size', t => {
     t.is(result, expected);
 });
 
+test('when called on an empty linked list should throw', t => {
+
+    const linkedList = {size: 0};
+
+    try {
+        popHead.call(linkedList);
+    } catch (error) {
+        t.is(error.message, 'cannot remove element from an empty linked list');
+    }
+});
+
