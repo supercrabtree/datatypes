@@ -5,7 +5,7 @@ import {createNode} from '../../../src/core/nodes';
 const createLinkedList = () => ({
     createNode,
     size: 1,
-    firstNode: {item: 'car', next: {}}
+    headNode: {item: 'car', next: {}}
 });
 
 test('pushHead() should add new items to beginning of the linked list', t => {
@@ -14,7 +14,7 @@ test('pushHead() should add new items to beginning of the linked list', t => {
 
     pushHead.call(linkedList, 'truck');
 
-    const result = linkedList.firstNode.item;
+    const result = linkedList.headNode.item;
     const expected = 'truck';
 
     t.is(result, expected);

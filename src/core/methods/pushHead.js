@@ -1,5 +1,5 @@
 function pushHead(item) {
-    this.firstNode = this.createNode(item, this.firstNode);
+    this.headNode = this.createNode(item, this.headNode);
     this.size++;
 }
 

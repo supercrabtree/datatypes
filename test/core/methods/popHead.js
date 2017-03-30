@@ -5,7 +5,7 @@ import {createNode} from '../../../src/core/nodes';
 const createLinkedList = () => ({
     createNode,
     size: 2,
-    firstNode: {item: 'boat', next: {item: 'beach', next: {}}}
+    headNode: {item: 'boat', next: {item: 'beach', next: {}}}
 });
 
 test('popHead() should return first item from the linked list', t => {
@@ -18,13 +18,13 @@ test('popHead() should return first item from the linked list', t => {
     t.is(result, expected);
 });
 
-test('popHead() should set the firstNode to the popped nodes "next" property', t => {
+test('popHead() should set the headNode to the popped nodes "next" property', t => {
 
     const linkedList = createLinkedList();
 
     popHead.call(linkedList);
 
-    const result = linkedList.firstNode.item;
+    const result = linkedList.headNode.item;
     const expected = 'beach';
 
     t.is(result, expected);
