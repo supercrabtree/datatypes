@@ -8,7 +8,7 @@ const createLinkedList = () => ({
     headNode: {item: 'boat', next: {item: 'beach', next: {}}}
 });
 
-test('popHead() should return first item from the linked list', t => {
+test('should return first item from the linked list', t => {
 
     const linkedList = createLinkedList();
 
@@ -18,7 +18,7 @@ test('popHead() should return first item from the linked list', t => {
     t.is(result, expected);
 });
 
-test('popHead() should set the headNode to the popped nodes "next" property', t => {
+test('should set the headNode to the popped nodes "next" property', t => {
 
     const linkedList = createLinkedList();
 
@@ -30,7 +30,7 @@ test('popHead() should set the headNode to the popped nodes "next" property', t 
     t.is(result, expected);
 });
 
-test('popHead() should decrement the linked list size', t => {
+test('should decrement the linked list size', t => {
 
     const linkedList = createLinkedList();
 

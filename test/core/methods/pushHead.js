@@ -8,7 +8,7 @@ const createLinkedList = () => ({
     headNode: {item: 'car', next: {}}
 });
 
-test('pushHead() should add new items to beginning of the linked list', t => {
+test('should add new items to beginning of the linked list', t => {
 
     const linkedList = createLinkedList();
 
@@ -20,7 +20,7 @@ test('pushHead() should add new items to beginning of the linked list', t => {
     t.is(result, expected);
 });
 
-test('pushHead() should increment the linked list size', t => {
+test('should increment the linked list size', t => {
 
     const linkedList = createLinkedList();
 
