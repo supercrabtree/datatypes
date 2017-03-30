@@ -1,7 +1,7 @@
 import test from 'ava';
 import {createNode} from '../../../src/core/nodes';
 
-test('when called without params should return a empty object', t => {
+test('when called without params should return a empty node', t => {
 
     const result = createNode();
     const expected = {
