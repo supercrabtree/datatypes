@@ -2,7 +2,7 @@ import test from 'ava';
 import {popHead} from '../../../src/core/methods';
 import {createNode} from '../../../src/core/nodes';
 
-const createMockLinkedList = () => ({
+const createLinkedList = () => ({
     createNode,
     size: 2,
     firstNode: {item: 'boat', next: {item: 'beach', next: {}}}
@@ -10,7 +10,7 @@ const createMockLinkedList = () => ({
 
 test('popHead() should return first item from the linked list', t => {
 
-    const linkedList = createMockLinkedList();
+    const linkedList = createLinkedList();
 
     const result = popHead.call(linkedList);
     const expected = 'boat';
@@ -20,7 +20,7 @@ test('popHead() should return first item from the linked list', t => {
 
 test('popHead() should set the firstNode to the popped nodes "next" property', t => {
 
-    const linkedList = createMockLinkedList();
+    const linkedList = createLinkedList();
 
     popHead.call(linkedList);
 
@@ -32,7 +32,7 @@ test('popHead() should set the firstNode to the popped nodes "next" property', t
 
 test('popHead() should decrement the linked list size', t => {
 
-    const linkedList = createMockLinkedList();
+    const linkedList = createLinkedList();
 
     popHead.call(linkedList);
 

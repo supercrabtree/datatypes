@@ -2,7 +2,7 @@ import test from 'ava';
 import {pushHead} from '../../../src/core/methods';
 import {createNode} from '../../../src/core/nodes';
 
-const createMockLinkedList = () => ({
+const createLinkedList = () => ({
     createNode,
     size: 1,
     firstNode: {item: 'car', next: {}}
@@ -10,7 +10,7 @@ const createMockLinkedList = () => ({
 
 test('pushHead() should add new items to beginning of the linked list', t => {
 
-    const linkedList = createMockLinkedList();
+    const linkedList = createLinkedList();
 
     pushHead.call(linkedList, 'truck');
 
@@ -22,7 +22,7 @@ test('pushHead() should add new items to beginning of the linked list', t => {
 
 test('pushHead() should increment the linked list size', t => {
 
-    const linkedList = createMockLinkedList();
+    const linkedList = createLinkedList();
 
     pushHead.call(linkedList, 'truck');
 
