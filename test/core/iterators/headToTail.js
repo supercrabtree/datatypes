@@ -12,7 +12,7 @@ test('should loop over a objects linked list in head to tail order', t => {
                 item: 'beach',
                 next: {
                     item: 'suncream',
-                    next: ''
+                    next: undefined
                 }
             }
         }

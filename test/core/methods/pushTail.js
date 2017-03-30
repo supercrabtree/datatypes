@@ -3,7 +3,7 @@ import {pushTail} from '../../../src/core/methods';
 import {createNode} from '../../../src/core/nodes';
 
 function createLinkedList() {
-    const tailNode = {item: 'beach', next: {}};
+    const tailNode = {item: 'beach', next: undefined};
     return {
         createNode,
         size: 2,

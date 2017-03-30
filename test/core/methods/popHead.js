@@ -5,7 +5,7 @@ import {createNode} from '../../../src/core/nodes';
 const createLinkedList = () => ({
     createNode,
     size: 2,
-    headNode: {item: 'boat', next: {item: 'beach', next: {}}}
+    headNode: {item: 'boat', next: {item: 'beach', next: undefined}}
 });
 
 test('should return first item from the linked list', t => {

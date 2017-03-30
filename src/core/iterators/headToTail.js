@@ -4,10 +4,14 @@ function headToTail() {
 
     return {
         next: function () {
-            const done = currentNode.next === undefined;
-            const value = currentNode.item;
 
-            currentNode = currentNode.next;
+            let value;
+            const done = currentNode === undefined;
+
+            if (!done) {
+                value = currentNode.item;
+                currentNode = currentNode.next;
+            }
 
             return {done, value};
         }

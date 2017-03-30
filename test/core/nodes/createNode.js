@@ -4,7 +4,10 @@ import {createNode} from '../../../src/core/nodes';
 test('when called without params should return a empty object', t => {
 
     const result = createNode();
-    const expected = {};
+    const expected = {
+        item: undefined,
+        next: undefined
+    };
 
     t.deepEqual(result, expected);
 });
@@ -21,7 +24,7 @@ test('when called with one param should set the node\'s "item" property to the f
 
 test('when called with two params should set the node\'s "next" property to the second param', t => {
 
-    const linkedList = {item: 'cat', next: {}};
+    const linkedList = {item: 'cat', next: undefined};
 
     const node = createNode('dog', linkedList);
 

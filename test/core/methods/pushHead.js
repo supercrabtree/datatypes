@@ -5,7 +5,7 @@ import {createNode} from '../../../src/core/nodes';
 const createLinkedList = () => ({
     createNode,
     size: 1,
-    headNode: {item: 'car', next: {}}
+    headNode: {item: 'car', next: undefined}
 });
 
 test('should add new items to beginning of the linked list', t => {

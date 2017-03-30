@@ -3,7 +3,7 @@ import {popTail} from '../../../src/core/methods';
 import {createNode} from '../../../src/core/nodes';
 
 function createLinkedList() {
-    const tailNode = {item: 'beach', next: {}};
+    const tailNode = {item: 'beach', next: undefined};
     return {
         createNode,
         size: 3,
@@ -49,7 +49,7 @@ test('should decrement the linked list size', t => {
 test('when called on a linked list with one item should set headNode and tailNode to undefined', t => {
 
     const linkedList = {
-        headNode: {item: 'hat', next: {}},
+        headNode: {item: 'hat', next: undefined},
         size: 1
     };
 

@@ -9,12 +9,10 @@ function popTail() {
     let item = node.item;
 
     while(node) {
-        if (node.next && node.next.next) {
+        if (node.next) {
             previousNode = node;
         }
-        if (node.next) {
-            item = node.item;
-        }
+        item = node.item;
         node = node.next;
     }
 
