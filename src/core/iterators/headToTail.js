@@ -5,15 +5,17 @@ function headToTail() {
     return {
         next: function () {
 
-            let value;
             const done = currentNode === undefined;
 
-            if (!done) {
-                value = currentNode.item;
-                currentNode = currentNode.next;
+            if (done) {
+                return {done};
             }
+            else {
+                const value = currentNode.item;
+                currentNode = currentNode.next;
 
-            return {done, value};
+                return {done, value};
+            }
         }
     }
 }
