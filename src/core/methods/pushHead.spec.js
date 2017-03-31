@@ -1,6 +1,6 @@
 import test from 'ava';
-import {pushHead} from '../../../src/core/methods';
-import {createNode} from '../../../src/core/nodes';
+import {pushHead} from './';
+import {createNode} from '../nodes';
 
 const createLinkedList = () => ({
     createNode,

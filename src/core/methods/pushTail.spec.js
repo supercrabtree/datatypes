@@ -1,6 +1,6 @@
 import test from 'ava';
-import {pushTail} from '../../../src/core/methods';
-import {createNode} from '../../../src/core/nodes';
+import {pushTail} from './';
+import {createNode} from '../nodes';
 
 function createLinkedList() {
     const tailNode = {item: 'beach', next: undefined};

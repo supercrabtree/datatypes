@@ -9,8 +9,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "ava",
-    "test-watch": "ava --watch",
+    "test": "ava src/**/*.spec.js",
+    "test-watch": "npm test -s -- --watch",
     "dist": "rollup -c"
   },
   "devDependencies": {

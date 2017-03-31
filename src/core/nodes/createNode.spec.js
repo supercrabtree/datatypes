@@ -1,5 +1,5 @@
 import test from 'ava';
-import {createNode} from '../../../src/core/nodes';
+import {createNode} from './';
 
 test('when called without params should return a empty node', t => {
 

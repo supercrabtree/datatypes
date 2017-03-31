@@ -1,6 +1,6 @@
 import test from 'ava';
-import {popHead} from '../../../src/core/methods';
-import {createNode} from '../../../src/core/nodes';
+import {popHead} from './';
+import {createNode} from '../nodes';
 
 const createLinkedList = () => ({
     createNode,

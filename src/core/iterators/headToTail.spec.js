@@ -1,5 +1,5 @@
 import test from 'ava';
-import {headToTail} from '../../../src/core/iterators';
+import {headToTail} from './';
 
 
 test('should loop over a objects linked list in head to tail order', t => {

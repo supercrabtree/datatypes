@@ -1,6 +1,6 @@
 import test from 'ava';
-import {popTail} from '../../../src/core/methods';
-import {createNode} from '../../../src/core/nodes';
+import {popTail} from './';
+import {createNode} from '../nodes';
 
 function createLinkedList() {
     const tailNode = {item: 'beach', next: undefined};
