@@ -1,6 +1,6 @@
-import {pushHead as add} from './core/methods';
-import {createNode} from './core/nodes';
-import {random} from './core/iterators';
+import {pushHead as add} from '../core/methods';
+import {createNode} from '../core/nodes';
+import {random} from '../core/iterators';
 
 function createRandomBag() {
 
