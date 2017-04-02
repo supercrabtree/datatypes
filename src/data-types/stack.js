@@ -1,7 +1,7 @@
-import {pushHead as push} from './core/methods';
-import {popHead as pop} from './core/methods';
-import {createNode} from './core/nodes';
-import {headToTail} from './core/iterators';
+import {pushHead as push} from '../core/methods';
+import {popHead as pop} from '../core/methods';
+import {createNode} from '../core/nodes';
+import {headToTail} from '../core/iterators';
 
 function createStack() {
 
@@ -23,3 +23,4 @@ function createStack() {
     }
 }
 
+export default createStack;
