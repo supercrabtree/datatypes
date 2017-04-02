@@ -1,7 +1,7 @@
-import {pushTail as enqueue} from './core/methods';
-import {popHead as dequeue} from './core/methods';
-import {createNode} from './core/nodes';
-import {headToTail} from './core/iterators';
+import {pushTail as enqueue} from '../core/methods';
+import {popHead as dequeue} from '../core/methods';
+import {createNode} from '../core/nodes';
+import {headToTail} from '../core/iterators';
 
 function createQueue() {
 
@@ -23,3 +23,4 @@ function createQueue() {
     }
 }
 
+export default createQueue;
