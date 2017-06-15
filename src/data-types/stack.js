@@ -13,14 +13,14 @@ function createStack() {
         [Symbol.iterator]: headToTail
     };
 
-    return {
+    return Object.freeze({
         pop: pop.bind(stack),
         push: push.bind(stack),
         get size() {
             return stack.size;
         },
         [Symbol.iterator]: headToTail.bind(stack)
-    }
+    });
 }
 
 export default createStack;

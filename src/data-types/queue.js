@@ -13,14 +13,14 @@ function createQueue() {
         [Symbol.iterator]: headToTail
     };
 
-    return {
+    return Object.freeze({
         dequeue: dequeue.bind(queue),
         enqueue: enqueue.bind(queue),
         get size() {
             return queue.size;
         },
         [Symbol.iterator]: headToTail.bind(queue)
-    }
+    });
 }
 
 export default createQueue;

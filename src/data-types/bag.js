@@ -11,13 +11,13 @@ function createBag() {
         [Symbol.iterator]: headToTail
     };
 
-    return {
+    return Object.freeze({
         add: add.bind(bag),
         get size() {
             return bag.size;
         },
         [Symbol.iterator]: headToTail.bind(bag)
-    }
+    });
 }
 
 export default createBag;

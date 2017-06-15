@@ -11,13 +11,13 @@ function createRandomBag() {
         [Symbol.iterator]: random
     };
 
-    return {
+    return Object.freeze({
         add: add.bind(bag),
         get size() {
             return bag.size;
         },
         [Symbol.iterator]: random.bind(bag)
-    }
+    });
 }
 
 export default createRandomBag;
